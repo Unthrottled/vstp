@@ -5,21 +5,13 @@ version = '1.0.0'
 
 repositories {
     mavenLocal()
-    maven {
-        url "http://amc.spawar.navy.mil/nexus/content/groups/deploy/"
-    }
-    maven {
-        url "http://amc.spawar.navy.mil/nexus/content/repositories/internal-tools"
-    }
-    maven {
-        url "http://amc.spawar.navy.mil/nexus/content/repositories/external-deploy"
-    }
+    mavenCentral()
 }
 
 jar {
     manifest {
         attributes (
-            "Main-Class": "io.acari.Main"
+            "Main-Class": "io.acari.VariableSwegTargetProxy"
         )
     }
 }
