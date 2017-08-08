@@ -40,8 +40,8 @@ public class SwegHandler implements HttpHandler {
                 httpURLConnection.setDoOutput(true);
                 String requestMethod = httpExchange.getRequestMethod();
                 httpURLConnection.setRequestMethod(requestMethod);
-                httpURLConnection.setRequestProperty("Cookie", "GDAS-TOKEN=POOPY");
-                httpURLConnection.setRequestProperty("X-GDAS-TOKEN", "POOPY");
+                httpURLConnection.setRequestProperty("Cookie", "BUTT-TOKEN=POOPY");
+                httpURLConnection.setRequestProperty("X-BUTT-TOKEN", "POOPY");
                 byte[] response = getResponse(httpExchange);
                 if (response.length > 1) {
                     OutputStream outputStream = httpURLConnection.getOutputStream();
